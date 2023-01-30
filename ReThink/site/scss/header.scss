@@ -1,0 +1,30 @@
+.h_reT{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding-top: 1rem;
+opacity: .6;
+}
+
+.div-logo_reT, .div-weather_reT{
+    padding: 0rem 7rem;
+}
+
+.img-logo_reT{
+    width: 6.5rem;
+    filter: var(--filter-white);
+}
+
+.img-weather_reT{
+    width: 1.3rem;
+    cursor: pointer;
+    filter: var(--filter-white);
+}
+
+.but-weather_reT {
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-color: none;
+}
