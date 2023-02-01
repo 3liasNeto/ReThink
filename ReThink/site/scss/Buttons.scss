@@ -1,0 +1,73 @@
+.div-btnarea_reT{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-color);
+    padding: 1rem;
+    gap: 1rem;
+    width: 9rem;
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.btn-btnarea_reT{
+    cursor: pointer;
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-color: none;
+}
+
+
+.img-btnarea_reT{
+    filter: var(--filter-white);
+}
+.img-btnarea_reT:hover{
+    opacity: .6;
+}
+
+
+.refresh-img_reT.active {
+    -webkit-animation-name: cycle;
+    -webkit-animation-duration: 700ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: cycle;
+    animation-duration: 700ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -moz-animation-name: cycle;
+    -moz-animation-duration: 700ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes cycle {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes cycle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cycle {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}

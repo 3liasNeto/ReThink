@@ -3,12 +3,14 @@
 :root{
         --background: #F1EEEE;
         --text-color: #000000;
+        --btn-color: #E0DFDF;
 }
    
     .darkmode{
         --background: #211F1F;
         --text-color: #ffffff;
         --filter-white: invert(99%) sepia(77%) saturate(12%) hue-rotate(266deg) brightness(105%) contrast(100%);
+        --btn-color: #151515;
     }
 
 

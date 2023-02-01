@@ -30,7 +30,7 @@
             </a>
         </div>
         <div class="div-weather_reT">
-            <button class="but-weather_reT theme"> 
+            <button type="button" class="but-weather_reT theme"> 
             <img src="./imgs/weather.png" alt="sun" class="img-weather_reT">
             </button>
         </div>
@@ -38,9 +38,17 @@
     <main class="m_reT">
         <div class="div-text_reT">
                <h1 class="h-text_reT h-article"></h1>
-                <h1 class="p-text_reT h-author"></h1>
+                <h1 class="h-text_reT h-author"> </h1>
+
+                <div class="div-btnarea_reT">
+                    <button type="button" class="btn-btnarea_reT refresh_reT"><img src="./imgs/refresh.png" alt="refresh" class="img-btnarea_reT refresh-img_reT"></button>
+                    <button type="button" class="btn-btnarea_reT copy_reT"><img src="./imgs/copy.png" alt="copy" class="img-btnarea_reT"></button>
+                    <button type="button" class="btn-btnarea_reT info_reT"><img src="./imgs/info.png" alt="info" class="img-btnarea_reT"></button>
+                </div>
         </div>
+        
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/theme-mode.js"></script>
     <script src="./js/text-themes.js"></script>
 </body>
