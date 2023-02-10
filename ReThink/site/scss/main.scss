@@ -12,3 +12,133 @@ background-color: var(--background);
 font-family: 'Roboto', sans-serif;
 overflow: hidden;
 }
+
+@media only screen and (max-width: $big) {
+
+
+    .div-text_reT{
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        width: calc(100% - 30rem);
+    }
+
+    .h-article{
+        font-size: 1.8rem;
+    }
+    
+    .h-author{
+        font-size: 1.4rem;
+    }
+    
+    .a-author{
+    padding-right: 5rem;
+    }
+        
+}
+
+@media only screen and (max-width: $medium) {
+    .div-text_reT{
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        width: calc(100% - 15rem);
+    }
+
+    .h-article{
+        font-size: 1.6rem;
+    }
+    
+    .h-author{
+        font-size: 1.2rem;
+    }
+    
+    .a-author{
+    padding-right: 5rem;
+    }
+        
+}
+
+@media only screen and (max-width: $small) {
+    .div-text_reT{
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        width: calc(100% - 10rem);
+    }
+
+    .h-article{
+        font-size: 1.6rem;
+    }
+    
+    .h-author{
+        font-size: 1.1rem;
+    }
+    
+    .a-author{
+    padding-right: 5rem;
+    }
+        
+}
+
+@media only screen and (max-width: 580px) {
+    .div-logo_reT{
+        padding: 0rem 7rem 0rem 4rem;
+    }
+    
+    .div-weather_reT{
+        padding: 0rem 4rem 0rem 0rem;
+    }
+
+    .div-text_reT{
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        width: calc(100% - 10rem);
+    }
+
+    .h-article{
+        font-size: 1.4rem;
+    }
+    
+    .h-author{
+        font-size: 1rem;
+    }
+    
+    .a-author{
+    padding-right: 5rem;
+    }
+        
+}
+
+@media only screen and (max-width: 400px) {
+    .div-logo_reT{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    
+    .div-weather_reT{
+        padding: 0rem 1rem 0rem 0rem;
+    }
+
+    .div-text_reT{
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        width: calc(100% - 5rem);
+    }
+
+    .h-article{
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+    
+    .h-author{
+        font-size: 1rem;
+    }
+    
+    .a-author{
+    padding-right: 5rem;
+    }
+        
+}
+
