@@ -413,8 +413,10 @@ template {
 .div-text_reT {
   margin: auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   width: calc(100% - 53rem);
+  max-height: 500px;
 }
 
 .a-text_reT {
@@ -490,15 +492,6 @@ template {
   -moz-animation-duration: 700ms;
   -moz-animation-iteration-count: 1;
   -moz-animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes cycle {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
 }
 @keyframes cycle {
   from {

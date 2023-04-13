@@ -43,15 +43,6 @@
   -moz-animation-iteration-count: 1;
   -moz-animation-fill-mode: forwards;
 }
-
-@-webkit-keyframes cycle {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
 @keyframes cycle {
   from {
     transform: rotate(0deg);

@@ -86,12 +86,18 @@ fetch(url)
     .then(result => {
       autor.innerText = result.frases[randonPhrase].autor
       frase.innerText = result.frases[randonPhrase].texto
+
+      if(frase.innerText.length > 500){
+        throw new Error
+      } 
     })
-    .catch(error => console.log('error', error));
+    .catch(error => {
+      console.log('error', error);
+      window.location.reload();
+    });
 
 //button copy
 const copy = document.querySelector(".copy_reT");
-const text = document.querySelectorAll(".h-text_reT");
 
             $(copy).click(function (e) {
               var clickedCell = $(e.target).closest(".div-text_reT");
@@ -119,4 +125,25 @@ $(document).ready(function() {
   });
 });
 
-// acessibilidade movel
+// erros ortograficos 
+const text = frase.textContent; // texto dentro do elemento
+const lang = "pt-BR"; // idioma
+const apiUrl = `https://api.languagetool.org/v2/check?text=${encodeURIComponent(text)}&language=${lang}`; // URL da API
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    if (data.matches.length > 0) { // verifica se há erros
+      let newText = text; // nova string corrigida
+      data.matches.forEach(match => {
+        newText = newText.replace(match.context.text, match.replacements[0].value); // substitui o texto original pelo texto corrigido
+      });
+      frase.textContent = newText; // atualiza o texto no elemento HTML
+      console.log(`Texto original: ${text}`);
+      console.log(`Texto corrigido: ${newText}`);
+    } else {
+      console.log('Não há erros de ortografia.');
+    }
+  })
+  .catch(error => console.error(error));
+

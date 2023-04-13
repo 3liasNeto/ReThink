@@ -9,8 +9,10 @@
 .div-text_reT {
   margin: auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   width: calc(100% - 53rem);
+  max-height: 500px;
 }
 
 .a-text_reT {
